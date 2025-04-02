@@ -14,7 +14,7 @@ venv/
 .DS_Store
 
 # Ignore model artifacts (optional if you don't want them in your repo)
-models/*.pkl
+#models/*.pkl
 
 # Ignore local data files (optional if data is large or sensitive)
 data/*.csv
