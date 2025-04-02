@@ -60,6 +60,7 @@ heart_disease_flask_app/
 └── README.md                   # This file
 
 ```
+
 # Assignment Requirements
 
 Below is a concise summary of the assignment requirements in **Markdown** format, focusing on **CRISP-DM methodology**, **machine learning model development**, and **deployment**:
