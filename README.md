@@ -3,12 +3,13 @@
 **Module Title:** Machine Learning & Pattern Recognition  
 **Assignment Title:** Design and Implementation of Machine Learning Models  
 **Course/Stage:** Award (e.g., MSc in AI)  
-**Group Members:**  
 
+**Group Members:**  
 - *Sameer Jahangir (20054516) (Group B)*  
-- *Naeem ul Hassan  (20054701) (Group B)*  
-- * () (Group A)*  
-- * () (Group A)*  
+- *Naeem ul Hassan (20054701) (Group B)*  
+- *Muhammad Bin Ashraf (20054513) (Group A)*  
+- *( ) (Group A)*  
+
 This repository contains a simple Flask-based machine learning app that predicts heart disease likelihood using a classification model trained on the [Kaggle Heart Disease dataset](https://www.kaggle.com/datasets/pritsheta/heart-attack?resource=download).
 
 Our project follows the **CRISP-DM** methodology:
@@ -39,7 +40,7 @@ Our project follows the **CRISP-DM** methodology:
 
 ## Project Overview
 
-This project aims to **predict heart disease** (binary classification) based on medical attributes (e.g., age, blood pressure, cholesterol). We leverage various machine learning techniques—Logistic Regression, Support Vector Machine (SVM), Naive Bayes—and compare their performance to identify the best classifier.
+This project aims to **predict heart disease** (binary classification) based on medical attributes (e.g., age, blood pressure, cholesterol). We leverage various machine learning techniques—Logistic Regression, Support Vector Machine (SVM), and Naive Bayes—and compare their performance to identify the best classifier.
 
 ---
 
@@ -57,18 +58,3 @@ heart_disease_flask_app/
 ├── model_training.py           # Script to preprocess, train & save best model
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
-
----
-
-
-## Assignment Requirements
-
-```bash
-	1.	CRISP-DM methodology
-	•	From Business Understanding through to Deployment.
-	2.	Three ML Models
-	•	Must discuss the mathematical requirements and explanation for each.
-	3.	Evaluation & Validation
-	•	Use appropriate performance measures (accuracy, recall, etc.).
-	4.	Deployment
-	•	Deploy the best model and demonstrate usage in a Flask web app.
