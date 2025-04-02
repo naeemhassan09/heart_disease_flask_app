@@ -1,4 +1,3 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,13 +7,43 @@
     <h1>Predict Heart Disease</h1>
     <form method="POST">
         <label>Age:</label><br>
-        <input type="text" name="age"><br><br>
+        <input type="number" name="age" placeholder="e.g. 55" required><br><br>
+
+        <label>Sex (1 = Male, 0 = Female):</label><br>
+        <input type="number" name="sex" placeholder="e.g. 1" required><br><br>
+
+        <label>Chest Pain Type (cp - 0 to 3):</label><br>
+        <input type="number" name="cp" placeholder="e.g. 2" required><br><br>
 
         <label>Resting Blood Pressure (trestbps):</label><br>
-        <input type="text" name="trestbps"><br><br>
+        <input type="number" name="trestbps" placeholder="e.g. 130" required><br><br>
 
-        <label>Cholesterol:</label><br>
-        <input type="text" name="chol"><br><br>
+        <label>Cholesterol (chol):</label><br>
+        <input type="number" name="chol" placeholder="e.g. 250" required><br><br>
+
+        <label>Fasting Blood Sugar > 120 (fbs - 1 = True, 0 = False):</label><br>
+        <input type="number" name="fbs" placeholder="e.g. 0" required><br><br>
+
+        <label>Resting ECG (restecg - 0 to 2):</label><br>
+        <input type="number" name="restecg" placeholder="e.g. 1" required><br><br>
+
+        <label>Max Heart Rate Achieved (thalach):</label><br>
+        <input type="number" name="thalach" placeholder="e.g. 150" required><br><br>
+
+        <label>Exercise-Induced Angina (exang - 1 = Yes, 0 = No):</label><br>
+        <input type="number" name="exang" placeholder="e.g. 0" required><br><br>
+
+        <label>ST Depression (oldpeak):</label><br>
+        <input type="number" name="oldpeak" step="0.1" placeholder="e.g. 1.5" required><br><br>
+
+        <label>Slope (0 = upsloping, 1 = flat, 2 = downsloping):</label><br>
+        <input type="number" name="slope" placeholder="e.g. 1" required><br><br>
+
+        <label>Number of Major Vessels (ca - 0 to 4):</label><br>
+        <input type="number" name="ca" placeholder="e.g. 0" required><br><br>
+
+        <label>Thalassemia (thal - 0 = normal, 1 = fixed defect, 2 = reversible defect):</label><br>
+        <input type="number" name="thal" placeholder="e.g. 2" required><br><br>
 
         <input type="submit" value="Predict">
     </form>
