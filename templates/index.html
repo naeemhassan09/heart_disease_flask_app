@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Predictor</title>
+</head>
+<body>
+    <h1>Predict Heart Disease</h1>
+    <form method="POST">
+        <label>Age:</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Resting Blood Pressure (trestbps):</label><br>
+        <input type="text" name="trestbps"><br><br>
+
+        <label>Cholesterol:</label><br>
+        <input type="text" name="chol"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+    <h2>Result: {{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
