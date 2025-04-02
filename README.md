@@ -130,3 +130,72 @@ Below is a concise summary of the assignment requirements in **Markdown** format
 - Summarize any **challenges** and **lessons learned**.
 
 ---
+
+
+
+# Setup & Usage
+
+This section provides step-by-step instructions for setting up a local development environment, training the machine learning model, and running the Flask application.
+
+---
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/naeemhassan09/heart_disease_flask_app.git
+cd heart_disease_flask_app
+```
+
+
+## 2. Create & Activate a Virtual Environment
+	1.	Create a virtual environment (named venv here for convenience):
+
+	python -m venv venv
+
+	Activate the virtual environment:
+	•	Windows: 
+	venv\Scripts\activate
+
+		•	macOS/Linux:
+		source venv/bin/activate
+
+⸻
+
+## 3. Install Dependencies
+
+Use the requirements.txt file to install all necessary packages:
+pip install -r requirements.txt
+
+## 4. Data Preparation
+
+Place your Heart Disease dataset (e.g., heart.csv) in the data/ folder:
+```bash
+heart_disease_flask_app/
+├── data/
+│   └── heart.csv
+```
+___
+
+## 5. Train the Model
+
+Run the model training script to:
+	•	Load the dataset from data/heart.csv.
+	•	Clean and preprocess the data.
+	•	Train multiple models.
+	•	Save the best model to models/best_model.pkl.
+```bash
+	python model_training.py
+```
+
+⸻
+
+## 6. Run the Flask App
+
+Start the Flask application:
+```bash
+python app.py
+```
+
+By default, Flask hosts on http://127.0.0.1:5000/.
+
+Open that URL in your browser to access a simple web form. Enter the required features (e.g., age, blood pressure, cholesterol, etc.) and click Predict. The page will display the model’s prediction.
