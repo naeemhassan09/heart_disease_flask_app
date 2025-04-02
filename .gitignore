@@ -1,0 +1,31 @@
+# Ignore Python bytecode files and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directory
+venv/
+
+# Ignore environment variable/config files
+.env
+
+# Ignore system files
+.DS_Store
+
+# Ignore model artifacts (optional if you don't want them in your repo)
+models/*.pkl
+
+# Ignore local data files (optional if data is large or sensitive)
+data/*.csv
+
+# Optionally ignore logs
+logs/
+*.log
+
+# If you're using Jupyter notebooks, you can ignore checkpoints
+.ipynb_checkpoints/
+
+# If using coverage reports
+htmlcov/
+.coverage
