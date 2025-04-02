@@ -59,6 +59,7 @@ heart_disease_flask_app/
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 
+```
 # Assignment Requirements
 
 Below is a concise summary of the assignment requirements in **Markdown** format, focusing on **CRISP-DM methodology**, **machine learning model development**, and **deployment**:
@@ -128,5 +129,3 @@ Below is a concise summary of the assignment requirements in **Markdown** format
 - Summarize any **challenges** and **lessons learned**.
 
 ---
-
-**Note**: The above outline is a **guideline**; always align with your specific course instructions, grading rubric, or additional requirements given by your instructor. Good luck with your project!  
