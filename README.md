@@ -48,16 +48,18 @@ This project aims to **predict heart disease** (binary classification) based on 
 
 ```bash
 heart_disease_flask_app/
-├── data/
-│   └── heart.csv               # Heart Disease dataset (Kaggle)
-├── models/
-│   └── best_model.pkl          # Trained (serialized) best model
+├── app.py                  ✅ entry point for Render
+├── api/
+│   └── index.py            ✅ real Flask app
 ├── templates/
-│   └── index.html              # Minimal Flask HTML form
-├── app.py                      # Flask application
-├── model_training.py           # Script to preprocess, train & save best model
-├── requirements.txt            # Python dependencies
-└── README.md                   # This file
+│   ├── index.html
+│   └── train.html
+├── models/
+│   └── best_model.pkl
+├── data/
+│   └── heart.csv
+├── model_training.py
+├── requirements.txt
 
 ```
 

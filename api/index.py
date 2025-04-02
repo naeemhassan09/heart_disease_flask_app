@@ -98,5 +98,3 @@ def train():
 
     return render_template("train.html", logs=logs)
 
-# Vercel requires the handler name
-handler = app
