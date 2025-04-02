@@ -17,7 +17,7 @@ venv/
 models/*.pkl
 
 # Ignore local data files (optional if data is large or sensitive)
-data/*.csv
+#data/*.csv
 
 # Optionally ignore logs
 logs/
@@ -29,3 +29,4 @@ logs/
 # If using coverage reports
 htmlcov/
 .coverage
+.vercel

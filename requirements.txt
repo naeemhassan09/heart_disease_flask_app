@@ -1,12 +1,12 @@
 # Flask - web framework
-Flask==2.2.3
+Flask==2.3.2
 
 # Data manipulation and analysis
-pandas==1.3.5
-numpy==1.21.4
+pandas==2.0.3
+numpy==1.26.2
 
 # Machine learning
-scikit-learn==1.0.2
+scikit-learn==1.3.0
 
 #render HTML templates with Jinja2 (commonly used by Flask)
 Jinja2==3.1.2
