@@ -19,7 +19,7 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, recall_score
 import pickle
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 
 def train_and_save_model(data_path="./data/heart.csv"):
     # To Verify the file path
@@ -50,10 +50,23 @@ def train_and_save_model(data_path="./data/heart.csv"):
     # Let's Read the Data
     df = pd.read_csv(data_path)
     # Quick checks
+    print("\n📊 === FIRST 5 ROWS OF DATA ===")
     print(df.head())
+
+    print("\n🔍 === DATA INFO ===")
     print(df.info())
 
-     # --------------------------
+    print("\n📈 === STATISTICAL SUMMARY ===")
+    print(df.describe())
+
+    print("\n❓ === MISSING VALUES PER COLUMN ===")
+    print(df.isnull().sum())
+
+    print(f"\n📐 === DATASET DIMENSIONS ===")
+    print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
+
+    print("\n🎯 === TARGET CLASS DISTRIBUTION ===")
+    print(df["target"].value_counts())  # --------------------------
     # 2. Data Understanding
     # --------------------------
     # After establishing the goal of predicting heart disease, the next step is to explore
@@ -121,7 +134,7 @@ def train_and_save_model(data_path="./data/heart.csv"):
 
     # Scale all features (encoded + numerical)
   
-    scaler = StandardScaler()
+    scaler = MinMaxScaler()
     X_scaled = scaler.fit_transform(X_encoded)
 
     # Now X_scaled is ready to be used for training
@@ -207,7 +220,7 @@ def train_and_save_model(data_path="./data/heart.csv"):
     # We'll save:
     # - The best performing model
     # - The preprocessor (OneHotEncoder inside ColumnTransformer)
-    # - The feature scaler (StandardScaler)
+    # - The feature scaler (Min maxScaler)
 
     with open("models/best_model.pkl", "wb") as f:
         pickle.dump((best_model, preprocessor, scaler), f)
